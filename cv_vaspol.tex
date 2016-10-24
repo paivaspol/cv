@@ -1,0 +1,201 @@
+% LaTeX resume using res.cls
+\documentclass[zhemargin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+%\setlength{\textwidth}{1in} % set width of text portion
+%\setlength{\textwidth}{4in} % set width of text portion
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{color}
+
+\usepackage{scrextend}
+\changefontsizes[11pt]{9pt}
+
+\setlist[itemize]{itemsep=-3pt, topsep=-5pt, partopsep=0pt}
+
+\usepackage{geometry}
+\geometry{
+    left=0.5in,
+    right=2in,
+    top=1in,
+    bottom=1in
+}
+
+%\topsep + \parskip [+ \partopsep]
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\huge\bf Zhe Wu}
+% Draw a horizontal line the whole width of resume:
+ %\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+ \moveleft\hoffset\vbox{\hrule width 7.4in height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{Computer Science and Engineering Division}
+ \moveleft.5\hoffset\centerline{University of Michigan, Ann Arbor, MI 48109-2121}
+ \moveleft.5\hoffset\centerline{Email: wuzhe@umich.edu}
+ \moveleft.5\hoffset\centerline{Phone: (951) 880-7652}
+ \moveleft.5\hoffset\centerline{\color{blue} {\url{http://zwu.me}}}
+
+\begin{resume}
+ 
+\section{\small INTERESTS}
+	My research interests span all facets of distributed systems. Specifically,
+    I'm focusing on improving the performance and robustness of cloud systems
+	and tackling the challenges associated with distributed applications
+	across the Internet.
+    I place a strong emphasis on (1) geo-distributed system;
+    (2) distributed storage system; and (3) cost effectiveness of cloud systems.
+    I have also done research in
+    wide-area Internet measurements
+    and web performance on mobile devices.
+
+\section{\small EDUCATION}
+	Ph.D student in Computer Science and Engineering. \hfill Expected 2017\\
+	\textbf{University of Michigan}, Ann Arbor, MI, USA.\\
+	Advisor: Prof. Harsha V. Madhyastha.
+
+	M.S in Computer Science. \hfill 2013\\
+	\textbf{University of California, Riverside}, CA, USA.\\
+	Advisor: Prof. Harsha V. Madhyastha. GPA: 3.945/4.0.
+
+	B.E in Computer Science and Technology. \hfill 2011\\
+	\textbf{Beihang University}, Beijing, China.\\
+	GPA: 88.5/100, ranking 5/164. Major GPA: 92/100, ranking 2/164.
+
+\section{\small PUBLICATIONS}
+    \textbf{Rethinking Cloud Service Marketplaces.}\\
+    \underline{Zhe Wu}, and Harsha V. Madhyastha.\\
+    The 15th ACM Workshop on Hot Topics in Networks (HotNets'16), Atlanta, GA, November 2016.
+
+    \textbf{Geo-Distributed Storage for Webservices Deployed in the Cloud.}\\
+    \underline{Zhe Wu}, and Harsha V. Madhyastha.\\
+    Poster session, the 13th USENIX Symposium on Networked Systems Design and Implementation (NSDI'16), Santa Clara, CA, March 2016.
+
+    \textbf{CosTLO: Cost-Effective Redundancy for Lower Latency Variance on Cloud Storage Services.} \\
+    \underline{Zhe Wu}, Curtis Yu, and Harsha V. Madhyastha.\\
+    The 12th USENIX Symposium on Networked Systems Design and Implementation (NSDI'15), Oakland, CA, May 2015.
+
+    \textbf{Klotski: Reprioritizing Web Content to Improve User Experience on Mobile Devices.} \\
+    Michael Butkiewicz, Daimeng Wang, \underline{Zhe Wu}, Harsha V. Madhyastha, Vyas Sekar.\\
+    The 12th USENIX Symposium on Networked Systems Design and Implementation (NSDI'15), Oakland, CA, May 2015.
+
+	\textbf{SPANStore: Cost-Effective Geo-Replicated Storage Spanning Multiple Cloud Services.} \\
+	\underline{Zhe Wu}, Michael Butkiewicz, Dorian Perkins, Ethan Katz-Bassett, and Harsha V. Madhyastha.\\
+	The 24th Symposium on Operating Systems Principles (SOSP'13), Nemacolin Woodlands Resort, PA, November 2013.
+
+	\textbf{Understanding the Latency Benefits of Multi-Cloud Webservice Deployments.} \\
+	\underline{Zhe Wu} and Harsha V. Madhyastha.\\
+	ACM Computer Communication Review (CCR), April 2013.
+
+\clearpage
+
+	\textbf{Enabling the Transition to the Mobile Web with WebSieve.} \\
+	Michael Butkiewicz, \underline{Zhe Wu}, Shunan Li, Pavithra Murali, Vagelis Hristidis, Harsha V. Madhyastha, and Vyas Sekar. \\
+	14th International Workshop on Mobile Computing Systems and Applications (HotMobile'13), Jekyll Island, GA, February 2013.
+
+    \textbf{Cost-Effective Geo-Replicated Storage Spanning Multiple Cloud Services.} \\
+    \underline{Zhe Wu}, Michael Butkiewicz, Dorian Perkins, Ethan Katz-Bassett, and Harsha V. Madhyastha.\\
+    Poster\&Demo session, ACM SIGCOMM (SIGCOMM'13), Hong Kong, August, 2013.
+
+%\clearpage
+
+\section{\small RESEARCH EXPERIENCE}
+	\textbf{Enhancing Cloud Service APIs.}\\
+    \textit{Advisor: Prof. Harsha V. Madhyastha \hfill 5/2016 - Present}
+	\begin{itemize}
+    \item Leveraging recent advances in software-defined networking with P4, redesigned cloud service marketplaces so that third-parties can not only offer new independent services but also augment the capabilities of existing cloud services. [HotNets'16]
+	\end{itemize}
+
+	\textbf{High-performance cost-effective geo-distributed services leveraging multi-cloud deployments.}\\
+    \textit{Advisor: Prof. Harsha V. Madhyastha \hfill 1/2012 - Present}
+	\begin{itemize}
+	\item Understood the latency benefits and challenges of multi-cloud deployments across popular cloud infrastructure services. [CCR'13]
+	\item Designed and implemented SPANStore, a unified view of storage services spanning data centers of multiple cloud providers. SPANStore automates the process of trading off cost and latency, while satisfying consistency and fault-tolerance requirements. [SOSP'13]
+    \item Designed and implemented CosTLO, a system that reduces the high latency variance associated with cloud storage services by augmenting GET/PUT requests issued by end-hosts with different forms of redundant requests. [NSDI'15]
+	\end{itemize}
+
+	\textbf{Optimizing the load times of generic web pages on mobile devices.}\\
+    \textit{Advisor: Prof. Harsha V. Madhyastha \hfill 9/2012 - 9/2014}
+	\begin{itemize}
+	\item Analyzed web page structure changes over time. [NSDI'15]
+	\item Designed an algorithm to estimate web page load time on mobile phones. [HotMobile'13]
+	\end{itemize}
+
+\section{\small TALKS}
+	\begin{itemize}[leftmargin=*, topsep=-10pt] %\itemsep -1pt
+	\item Presented CosTLO at NSDI'15.
+    \item Presented SPANStore at SOSP'13.
+	\end{itemize}
+
+\section{\small SKILLS}
+	Most of my work is done in C/C++, Java, or Python under MAC/Linux. I have significant experience working with cloud services (Amazon AWS and Windows Azure) to build applications and conduct measurements, and CPLEX to solve optimization problems.
+
+\section{\small WORK EXPERIENCE}
+    \textbf{Software Engineering Intern} \hfill 5/2016 - 8/2016 \\
+    Google Spanner Team, Google Inc., Kirkland, WA.\\
+    Project: developed a statistics infrastructure for Spanner SQL optimizer and implemented an optimization for making query index selections.
+
+    \textbf{Software Engineering Intern} \hfill 6/2014 - 9/2014 \\
+    Google Global Cache Team, Google Inc., Cambridge, MA.\\
+    Project: developed a system that discovers the Internet routes traversed by user flows.
+
+    \textbf{Graduate Student Research Assistant} \hfill 1/2015 - Present \\
+    Advisor: Prof. Harsha V. Madhyastha.\\
+    Electrical Engineering and Computer Science Department, University of Michigan, Ann Arbor, MI.
+
+    \textbf{Research Assistant} \hfill 9/2011 - 12/2014 \\
+    Advisor: Prof. Harsha V. Madhyastha.\\
+    Department of Computer Science and Engineering, University of California, Riverside, CA.
+
+\section{\small TEACHING EXPERIENCE}
+    \textbf{Guest Lecture} \hfill 3/2015\\
+    Electrical Engineering and Computer Science Department, University of Michigan, Ann Arbor, MI.
+    \begin{itemize}
+    \item EECS 591: Distributed Systems (Graduate-level, Winter 2015)
+    \end{itemize}
+
+	\textbf{Teaching Assistant} \hfill 9/2012 - 12/2013 \\
+	Department of Computer Science and Engineering, University of California, Riverside, CA.
+	\begin{itemize}
+	\item CS 253: Distributed Systems (Graduate-level, Fall 2013).
+	\item CS 153: Design of Operating Systems (Spring 2013).
+	\item CS 153: Design of Operating Systems (Winter 2013).
+	\item CS 10: Introduction to Computer Science (Fall 2012).
+	\end{itemize}
+
+\section{\small SERVICES}
+	\begin{itemize}[leftmargin=*, topsep=-10pt] %\itemsep -1pt
+    \item Technical Program Committee Member: The IEEE 12th International Conference on Mobile Ad-hoc and Sensor Networks (MSN 2016).
+    \item Reviewer: IEEE/ACM Transactions on Networking (2016), ACM Transactions on Architecture and Code Optimization (2016), ACM Transactions on Storage (2016), IEEE Transactions on Parallel and Distributed Systems (2016), IEEE Transactions on Cloud Computing (2015), IEEE Communications Letters (2016), Ad Hoc \& Sensor Wireless Networks (2016), Cluster Computing: the Journal of Networks, Software Tools and Applications (2016).
+    \item Sub-reviewer: The 45th International Conference on Parallel Processing (ICPP'2016), The 25th International Conference on Computer Communication and Networks (ICCCN'2016).
+	\end{itemize}
+
+\section{\small AWARDS}
+	\begin{itemize}[leftmargin=*, topsep=-10pt] %\itemsep -1pt
+	%\setlength{\itemindent}{-2em}
+    \item Student Travel Grants: NSDI 2016, SOSP 2015, NSDI 2015, SOSP 2013, SIGCOMM 2013.
+	\item 2011-2013 Graduate Division Fellowship Award. University of California, Riverside, CA.
+	\item 2010 Airbus Scholarship (Top 5\%). Beihang University, Beijing, China.
+	\item 2009 National Scholarship (Top 3\%). Beihang University, Beijing, China.
+	\item 2009\&2010 First Prize of Excellent Academic Scholarship. Beihang University, Beijing, China.
+	\item 2009\&2010 Beihang University “Outstanding Student” (Top 3\%). Beihang University, Beijing, China.
+	\end{itemize}
+
+\section{COURSEWORK} 
+	\begin{itemize}[leftmargin=*]
+	\item Parallel Computer Architecture
+	\item Advanced Computer Networks
+	\item Design and Analysis of Algorithms
+    \item Performance Evaluation of Computer Networks
+    \item Advanced Computer Architecture
+    \item Network Routing
+	\item Data Mining Techniques
+	\item Distributed System
+	\item Computer Security
+	\item Advanced Operating System
+    \item Wireless Networks and Mobile Computing
+	\end{itemize}
+\end{resume}
+\end{document}
