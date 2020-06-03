@@ -1,7 +1,7 @@
 % LaTeX resume using res.cls
 \documentclass[zhemargin]{res}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
+%\usepackage{newcent}   % uses new century schoolbook postscript font
 %\setlength{\textwidth}{1in} % set width of text portion
 %\setlength{\textwidth}{4in} % set width of text portion
 \usepackage{enumitem}
@@ -21,43 +21,35 @@
     bottom=1in
 }
 
-%\topsep + \parskip [+ \partopsep]
-
 \begin{document}
 
 % Center the name over the entire width of resume:
  \moveleft.5\hoffset\centerline{\huge\bf Vaspol Ruamviboonsuk}
+ \smallskip
 % Draw a horizontal line the whole width of resume:
  %\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
- \moveleft\hoffset\vbox{\hrule width 7.4in height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{Computer Science and Engineering}
- \moveleft.5\hoffset\centerline{University of Michigan, Ann Arbor, MI 48109-2121}
- \moveleft.5\hoffset\centerline{Email: vaspol@umich.edu}
- \moveleft.5\hoffset\centerline{Phone: (678)-800-5952}
- \moveleft.5\hoffset\centerline{\color{blue} {\url{https://vaspol.me}}}
+ % \moveleft.5\hoffset\centerline{Computer Science and Engineering}
+ \moveleft.5\hoffset\centerline{Computer Science and Engineering, University of Michigan, Ann Arbor, MI 48109-2121}
+ \moveleft.5\hoffset\centerline{Email: vaspol@umich.edu $\cdot$ Phone: (678)-800-5952}
+ % \moveleft.5\hoffset\centerline{}
+ % \moveleft.5\hoffset\centerline{\color{blue} {\url{https://vaspol.me}}}
+ \moveleft\hoffset\vbox{\hrule width 7.4in height 1pt}\smallskip
 
 \begin{resume}
- 
-\section{\small INTERESTS}
-  My primary research interest is in web performance. Currently, I focus
-  on making the web faster while preserving the web security model. I am also interested
-  in other aspects of web performance such as metrics for measuring web performance.
-  In addition, my research interests also include distributed systems, 
-  which I have also done some research on wide-area Internet measurements, 
-  and distributed storage systems.
 
 \section{\small EDUCATION}
-	Ph.D. student in Computer Science and Engineering \hfill Expected 2019\\
+	Ph.D. in Computer Science and Engineering \hfill Expected 8, 2020\\
+	\textbf{University of Michigan}, Ann Arbor, MI\\
+	Advisor: Prof. Harsha V. Madhyastha \\
+  \textbf{Thesis: TBD}
+
+	M.S. in Computer Science and Engineering \hfill 2016\\
 	\textbf{University of Michigan}, Ann Arbor, MI\\
 	Advisor: Prof. Harsha V. Madhyastha
 
-	M.S. in Computer Science. \hfill 2016\\
-	\textbf{University of Michigan}, Ann Arbor, MI\\
-	Advisor: Prof. Harsha V. Madhyastha
-
-	B.S. with Honors in Computer Science \hfill 2014\\
+	B.S. with Distinction in Computer Science \hfill 2014\\
 	\textbf{University of Washington}, Seattle, WA\\
   Advisor: Prof. Richard Ladner\\
   Thesis: DigiTaps: Eyes-free Number Entry Method with Minimal Voice Feedback
@@ -65,11 +57,11 @@
 \section{\small PUBLICATIONS}
     \textbf{Vroom: Accelerating the Mobile Web with Server-Aided Dependency Resolution}\\
     \underline{Vaspol Ruamviboonsuk}, Ravi Netravali, Muhammed Uluyol, and Harsha V. Madhyastha\\
-    2017 ACM SIGCOMM, Los Angeles, CA, August 2017
+    ACM SIGCOMM 2017, Los Angeles, CA, August 2017 \textbf{(ANRP Award)}
 
     \textbf{Demonstration of the Myria big data management service}\\
-    Daniel Halperin, Victor Teixeira de Almeida, Lee Lee Choo, Shumo Chu, Paraschos Koutris, 
-    Dominik Moritz, Jennifer Ortiz, \underline{Vaspol Ruamviboonsuk}, Jingjing Wang, 
+    Daniel Halperin, Victor Teixeira de Almeida, Lee Lee Choo, Shumo Chu, Paraschos Koutris,
+    Dominik Moritz, Jennifer Ortiz, \underline{Vaspol Ruamviboonsuk}, Jingjing Wang,
     Andrew Whitaker, Shengliang Xu, Magdalena Balazinska, Bill Howe, and Dan Suciu\\
     2014 ACM SIGMOD international conference on Management of data, Snowbird, UT, November 2014
 
@@ -77,28 +69,79 @@
     \underline{Vaspol Ruamviboonsuk}, Shiri Azenkot, and Richard E Ladner\\
     Poster session, the 14th international ACM SIGACCESS conference on Computers and accessibility (ASSETS 2012), Boulder, CO, October 2012
 
+\section{\small WORK EXPERIENCE}
+    \textbf{Software Engineer Intern} \hfill 10/2018 - 3/2019 \\
+    Google Inc. Ann Arbor, MI\\
+    Team: Chrome Data Saver \\
+    \emph{Project:} Wrap up the projects done with the team over Summer of 2017
+    and 2018 by submitting a paper to the NSDI 2020 conference.
+
+    \textbf{Software Engineer Intern} \hfill 6/2018 - 8/2018 \\
+    Google Inc. Seattle, WA\\
+    Team: Chrome Data Saver \\
+    \emph{Project:} Optimized Chrome Lite Page render performance by
+    identifying that fetches of CSS slows down rendering.
+    %
+    Sped up the rendering of web pages by 50\% by inlining CSS to the HTML,
+    which eliminates the penalty of fetching CSS resources over the network.
+    %
+
+    \textbf{Software Engineer Intern} \hfill 9/2017 - 12/2017 \\
+    Google Inc. Mountain View, CA\\
+    Team: Ads Quality \\
+    \emph{Project:} Worked on understanding the implications of different web page resource prefetching strategies.
+
+    \textbf{Software Engineer Intern} \hfill 5/2017 - 8/2017 \\
+    Google Inc. Seattle, WA\\
+    Team: Chrome Data Saver \\
+    \emph{Project:} Prototyped of a server-side rendering system to improve the
+    user experience when browsing the web on slow cellular networks using
+    resource-constrained devices; press release:
+    \url{https://blog.chromium.org/2019/03/chrome-lite-pages-for-faster-leaner.html}.
+
+    \textbf{Graduate Student Research Assistant} \hfill 5/2015 - Present \\
+    Advisor: Prof. Harsha V. Madhyastha.\\
+    Electrical Engineering and Computer Science Department, University of Michigan, Ann Arbor, MI
+
+    \textbf{Software Developer Engineer in Test Intern} \hfill 6/2013 - 9/2013 \\
+    Microsoft. Redmond, WA\\
+    Project: Extended Windows Intune test framework to support fuzz testing, developed test modules
+    using the extended features, and incorporated the module as part of the weekly test suite.
+
+    % \textbf{Software Engineer Intern} \hfill 6/2012 - 8/2012 \\
+    % Cobalt. Seattle, WA\\
+    % Project: Designed and developed an internal monitoring tool that periodically aggregates application server logs for checking system health.
+
+
 \section{\small RESEARCH EXPERIENCE}
-	\textbf{Improving mobile web performance via aids from web servers}\\
+	\textbf{Improving mobile web performance with aid from web servers}\\
     \textit{Advisor: Prof. Harsha V. Madhyastha \hfill 10/2015 - Present}
 	\begin{itemize}
-    \item Understood the fundamental reasons why web pages are slow and use this 
-      knowledge to design a system that leverages recent advances of web optimization 
-      techniques such as HTTP/2 PUSH and Link preload headers to reduce 
-      web page load time.
+    \item Mobile page loads are slow because of underutilization of network and computational
+      resources; a client can fetch the resources on a page only after it
+      discovers them by parsing and executing other resources on the page.
+
+    \item Designed and implemented the Vroom framework, which decouples discovery of
+      resources from parsing and execution by leveraging recent web optimization
+      techniques such as HTTP/2 PUSH and Link preload headers. Vroom is able to improve
+      the median page load time by 5 seconds. [SIGCOMM'17]
 	\end{itemize}
 
-	\textbf{Improving front-end latency to cloud services}\\
+	\textbf{Improving latency from clients to cloud services}\\
     \textit{Advisor: Prof. Harsha V. Madhyastha \hfill 05/2015 - 10/2015}
 	\begin{itemize}
-    \item Analyzed internet measurement data to see patterns of front-end latency 
-      degradation and understood how to implement front-end server redirection for the client.
+    \item Analyzed internet measurement data to identify degradations of
+      latency between clients and web service front-ends.
+    \item Designed and implemented an algorithm for dynamically varying
+      which front-end a client is redirected to in order to minimize the
+      user-perceived latencies.
 	\end{itemize}
 
 	\textbf{Numerical input gestures for visually-impaired people}\\
     \textit{Advisor: Prof. Richard Ladner \hfill 2011 - 2014}
 	\begin{itemize}
-    \item Designed special gestures for inputting numbers on smartphones 
-      by leveraging multi-touch input surface. [ASSETS'12]
+    \item Designed special gestures for inputting numbers on smartphones
+      by leveraging multi-touch input surface for blind smartphone users. [ASSETS'12]
 	\end{itemize}
 
 	\textbf{Myria, Big Data as a Service}\\
@@ -106,6 +149,16 @@
 	\begin{itemize}
     \item Implemented a database operator in the system. [SIGMOD'14]
 	\end{itemize}
+
+\section{\small AWARDS}
+  Internet Research Task Force, \textbf{Applied Networking Research Prize}, 2018 \\
+  University of Michigan, \textbf{First-year Ph.D. Student Fellowship}, 2014 \\
+  University of Washington, \textbf{Mary Gates Research Scholarship}, 2013 \\
+  % \begin{itemize}[leftmargin=*, topsep=-10pt] %\itemsep -1pt
+	% %\setlength{\itemindent}{-2em}
+  %   \item 2013 Mary Gates Research Scholarship. University of Washington, Seattle, WA
+	% \end{itemize}
+
 
 \section{\small TEACHING EXPERIENCE}
 	\textbf{Graduate Student Instructor} \hfill 1/2017 - 4/2017 \\
@@ -119,38 +172,10 @@
       \item CSE 344: Introduction to Data Management (Fall 2012, Winter 2013, Winter 2014)
 	\end{itemize}
 
-\section{\small WORK EXPERIENCE}
-    \textbf{Software Engineer Intern} \hfill 9/2017 - 12/2017 \\
-    Google Inc. Mountain View, CA\\
-    Team: Ads Quality. 
-
-    \textbf{Software Engineer Intern} \hfill 5/2017 - 8/2017 \\
-    Google Inc. Seattle, WA\\
-    Team: Flywheel. Improve web performance.
-
-    \textbf{Graduate Student Research Assistant} \hfill 5/2015 - Present \\
-    Advisor: Prof. Harsha V. Madhyastha.\\
-    Electrical Engineering and Computer Science Department, University of Michigan, Ann Arbor, MI
-
-    \textbf{Software Developer Engineer in Test Intern} \hfill 6/2013 - 9/2013 \\
-    Microsoft. Redmond, WA\\
-    Project: Extended Windows Intune test framework to support fuzz testing, developed test modules using the extended features, and incorporated the module as part of the weekly test suite.
-
-    \textbf{Software Engineer Intern} \hfill 6/2012 - 8/2012 \\
-    Cobalt. Seattle, WA\\
-    Project: Designed and developed an internal monitoring tool that periodically aggregates application server logs for checking system health.
-
-\section{\small AWARDS}
-	\begin{itemize}[leftmargin=*, topsep=-10pt] %\itemsep -1pt
-	%\setlength{\itemindent}{-2em}
-    \item 2013 Mary Gates Research Scholarship. University of Washington, Seattle, WA
-	\end{itemize}
-
 \section{\small SKILLS}
-	Most of my work is done in C/C++, Java, and Python, but I am most familiar 
-  with Java and Python. I also have some experience working with networking 
-  tools such as iptables, and tcpdump. I am also familiar with interacting 
-  with android smartphones via ADB.
+  Most of my work is done in C/C++, Go, Java, and Python. I also have some
+  experience working with networking tools such as iptables and tcpdump. I am
+  also familiar with interacting with Android smartphones via ADB.
 
 \end{resume}
 \end{document}
