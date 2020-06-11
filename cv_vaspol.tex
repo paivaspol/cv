@@ -42,8 +42,7 @@
 \section{\small EDUCATION}
 	Ph.D. in Computer Science and Engineering \hfill Expected 8, 2020\\
 	\textbf{University of Michigan}, Ann Arbor, MI\\
-	Advisor: Prof. Harsha V. Madhyastha \\
-  \textbf{Thesis: TBD}
+	Advisor: Prof. Harsha V. Madhyastha
 
 	M.S. in Computer Science and Engineering \hfill 2016\\
 	\textbf{University of Michigan}, Ann Arbor, MI\\
@@ -55,6 +54,14 @@
   Thesis: DigiTaps: Eyes-free Number Entry Method with Minimal Voice Feedback
 
 \section{\small PUBLICATIONS}
+    \textbf{Taking the Long View: The Relationship between Page Complexity and Performance on the Web} \textit{(Under submission)} \\
+    \underline{Vaspol Ruamviboonsuk}, Ravi Netravali, and Harsha V. Madhyastha\\
+    IMC 2020
+
+    \textbf{Rethinking Client-Side Caching for the Mobile Web} \textit{(Under submission)} \\
+    Ayush Goel, \underline{Vaspol Ruamviboonsuk}, Ravi Netravali, and Harsha V. Madhyastha\\
+    IMC 2020
+
     \textbf{Vroom: Accelerating the Mobile Web with Server-Aided Dependency Resolution}\\
     \underline{Vaspol Ruamviboonsuk}, Ravi Netravali, Muhammed Uluyol, and Harsha V. Madhyastha\\
     ACM SIGCOMM 2017, Los Angeles, CA, August 2017 \textbf{(ANRP Award)}
@@ -63,11 +70,20 @@
     Daniel Halperin, Victor Teixeira de Almeida, Lee Lee Choo, Shumo Chu, Paraschos Koutris,
     Dominik Moritz, Jennifer Ortiz, \underline{Vaspol Ruamviboonsuk}, Jingjing Wang,
     Andrew Whitaker, Shengliang Xu, Magdalena Balazinska, Bill Howe, and Dan Suciu\\
-    2014 ACM SIGMOD international conference on Management of data, Snowbird, UT, November 2014
+    ACM SIGMOD 2014, Snowbird, UT, November 2014
 
     \textbf{Tapulator: A non-visual calculator using natural prefix-free codes}\\
     \underline{Vaspol Ruamviboonsuk}, Shiri Azenkot, and Richard E Ladner\\
-    Poster session, the 14th international ACM SIGACCESS conference on Computers and accessibility (ASSETS 2012), Boulder, CO, October 2012
+    ACM ASSETS 2012, Boulder, CO, October 2012 \textit{(Poster)}
+
+\section{\small AWARDS}
+  Internet Research Task Force, \textbf{Applied Networking Research Prize}, 2018 \\
+  University of Michigan, \textbf{First-year Ph.D. Student Fellowship}, 2014 \\
+  University of Washington, \textbf{Mary Gates Research Scholarship}, 2013 \\
+  % \begin{itemize}[leftmargin=*, topsep=-10pt] %\itemsep -1pt
+	% %\setlength{\itemindent}{-2em}
+  %   \item 2013 Mary Gates Research Scholarship. University of Washington, Seattle, WA
+	% \end{itemize}
 
 \section{\small WORK EXPERIENCE}
     \textbf{Software Engineer Intern} \hfill 10/2018 - 3/2019 \\
@@ -77,7 +93,7 @@
     and 2018 by submitting a paper to the NSDI 2020 conference.
 
     \textbf{Software Engineer Intern} \hfill 6/2018 - 8/2018 \\
-    Google Inc. Seattle, WA\\
+    Google Inc., Seattle, WA\\
     Team: Chrome Data Saver \\
     \emph{Project:} Optimized Chrome Lite Page render performance by
     identifying that fetches of CSS slows down rendering.
@@ -87,12 +103,13 @@
     %
 
     \textbf{Software Engineer Intern} \hfill 9/2017 - 12/2017 \\
-    Google Inc. Mountain View, CA\\
+    Google Inc., Mountain View, CA\\
     Team: Ads Quality \\
-    \emph{Project:} Worked on understanding the implications of different web page resource prefetching strategies.
+    \emph{Project:} Investigated various prefetching strategies to better
+    understand performance implications of prefetching different web page resource.
 
     \textbf{Software Engineer Intern} \hfill 5/2017 - 8/2017 \\
-    Google Inc. Seattle, WA\\
+    Google Inc., Seattle, WA\\
     Team: Chrome Data Saver \\
     \emph{Project:} Prototyped of a server-side rendering system to improve the
     user experience when browsing the web on slow cellular networks using
@@ -108,27 +125,44 @@
     Project: Extended Windows Intune test framework to support fuzz testing, developed test modules
     using the extended features, and incorporated the module as part of the weekly test suite.
 
-    % \textbf{Software Engineer Intern} \hfill 6/2012 - 8/2012 \\
-    % Cobalt. Seattle, WA\\
-    % Project: Designed and developed an internal monitoring tool that periodically aggregates application server logs for checking system health.
+    \textbf{Software Engineer Intern} \hfill 6/2012 - 8/2012 \\
+    Cobalt. Seattle, WA\\
+    Project: Designed and developed an internal monitoring tool that periodically aggregates application server logs for checking system health.
 
 
 \section{\small RESEARCH EXPERIENCE}
-	\textbf{Improving mobile web performance with aid from web servers}\\
-    \textit{Advisor: Prof. Harsha V. Madhyastha \hfill 10/2015 - Present}
-	\begin{itemize}
-    \item Mobile page loads are slow because of underutilization of network and computational
-      resources; a client can fetch the resources on a page only after it
-      discovers them by parsing and executing other resources on the page.
+  \textbf{Longitudinal study of the web complexity and web performance}\\
+    \textit{Advisor: Prof. Harsha V. Madhyastha \hfill 2019 - 2020}\\
+    In this project, we seek to answer the following questions: ``How have
+      web pages changed over the years?'', and ``What has been the corresponding
+      impact on web performance?''. We conduct a longitudinal study using the
+      HTTP Archive dataset to study the relationship between the change in page
+      complexity and the change in performance websites between the year 2016
+      and 2019. We observe that many of the web pages with more content in 2019
+      compared to 2016 do not see a proportionate slowdown in their loads.
 
-    \item Designed and implemented the Vroom framework, which decouples discovery of
-      resources from parsing and execution by leveraging recent web optimization
-      techniques such as HTTP/2 PUSH and Link preload headers. Vroom is able to improve
-      the median page load time by 5 seconds. [SIGCOMM'17]
-	\end{itemize}
+  \textbf{Optimizing rendering for Google Lite Pages}\\
+    \textit{Advisor: Prof. Harsha V. Madhyastha and Chrome Data Saver Team\hfill
+    2017 - 2019}\\
+    The Chrome Data Saver proxy optimizes web pages loads by having performant
+    proxies substantially simplify web pages. we investigated the rendering
+    inefficiencies of the simplified web pages and devise optimizations that
+    accelerate the simplified pages, which results in a 50\% improvement in
+    rendering.
+
+
+  \textbf{Vroom} [SIGCOMM'17]\\
+    \textit{Advisor: Prof. Harsha V. Madhyastha \hfill 2015 - 2017}\\
+    Mobile page loads are slow because of underutilization of network and
+    computational resources; a client can fetch the resources on a page only
+    after it discovers them by parsing and executing other resources on the
+    page.  I designed and implemented the Vroom framework, which decouples
+    discovery of resources from parsing and execution by leveraging recent web
+    optimization techniques such as HTTP/2 PUSH and Link preload headers. Vroom
+    is able to improve the median page load time by 5 seconds.
 
 	\textbf{Improving latency from clients to cloud services}\\
-    \textit{Advisor: Prof. Harsha V. Madhyastha \hfill 05/2015 - 10/2015}
+    \textit{Advisor: Prof. Harsha V. Madhyastha \hfill 05/2015 - 10/2015}\\
 	\begin{itemize}
     \item Analyzed internet measurement data to identify degradations of
       latency between clients and web service front-ends.
@@ -150,15 +184,6 @@
     \item Implemented a database operator in the system. [SIGMOD'14]
 	\end{itemize}
 
-\section{\small AWARDS}
-  Internet Research Task Force, \textbf{Applied Networking Research Prize}, 2018 \\
-  University of Michigan, \textbf{First-year Ph.D. Student Fellowship}, 2014 \\
-  University of Washington, \textbf{Mary Gates Research Scholarship}, 2013 \\
-  % \begin{itemize}[leftmargin=*, topsep=-10pt] %\itemsep -1pt
-	% %\setlength{\itemindent}{-2em}
-  %   \item 2013 Mary Gates Research Scholarship. University of Washington, Seattle, WA
-	% \end{itemize}
-
 
 \section{\small TEACHING EXPERIENCE}
 	\textbf{Graduate Student Instructor} \hfill 1/2017 - 4/2017 \\
@@ -173,7 +198,7 @@
 	\end{itemize}
 
 \section{\small SKILLS}
-  Most of my work is done in C/C++, Go, Java, and Python. I also have some
+  Most of my work is done in C/C++, Go, Java, JavaScript, and Python. I also have some
   experience working with networking tools such as iptables and tcpdump. I am
   also familiar with interacting with Android smartphones via ADB.
 
