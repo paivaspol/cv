@@ -1,0 +1,107 @@
+% LaTeX resume using resume.cls
+\documentclass{resume}
+
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{color}
+
+\usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Vaspol Ruamviboonsuk} % Your name
+\address{903 NW 59th St, Seattle, WA 98107 $\cdot$ Email: paivaspol@gmail.com $\cdot$ Phone: (678)-800-5952} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+
+\begin{document}
+
+\begin{rSection}{EDUCATION}
+  \textbf{Ph.D. in Computer Science and Engineering} \hfill 2020\\
+	University of Michigan, Ann Arbor, MI\\
+  Thesis: Understanding and Improving the Performance of Web Page Loads
+
+  \textbf{M.S. in Computer Science and Engineering} \hfill 2016\\
+	University of Michigan, Ann Arbor, MI
+
+  \textbf{B.S. with Distinction in Computer Science} \hfill 2014\\
+	University of Washington, Seattle, WA
+
+\end{rSection} % Education
+
+% \section{\small OBJECTIVE}
+%   I am looking for a full-time position. I seek to apply my research background
+%   in optimizing web page load performance to users at a global scale by using my
+%   skills and experience in identifying page load performance bottlenecks such as
+%   analyzing browsers' page load tracing information and inspecting
+%   interactions between client and server.
+
+\begin{rSection}{EXPERIENCE}
+
+    \begin{rSubsection}{Senior Software Engineer}{06/2024 - Present}{Azure
+      Storage, Microsoft, Redmond, WA}{}
+
+    \item Drove strategy across 2 Partner-level organizations to propose and
+      implement an application-layer, session-based HTTP/2 block storage
+      protocol, reducing COGS for Azure SQL deployments by 40\%.
+
+    \item Led an organization-wide effort to improve detection of malfunctioning
+      storage servers by designing an anomaly-detection approach using
+      statistical methods (e.g., z-score analysis) and aligning implementation
+      across teams.
+
+    \end{rSubsection}
+
+    \begin{rSubsection}{Software Engineer II}{03/2022 - 06-2024}{Azure Storage,
+      Microsoft, Redmond, WA}{}
+
+    \item Reduced write latency for Azure Elastic SAN (distributed iSCSI target
+      service) by 17.5\% on average by designing a new wire serialization format
+      and eliminating redundant data buffer copies across the request path.
+
+    \item Strengthened resiliency of Azure Managed Disks operations by adding
+      CRC verification on top of existing end-to-end encryption, enabling
+      detection of memory corruption during encryption or network transit;
+      successfully detected an erroneous write from a malfunctioning client
+      after deployment.
+
+    \end{rSubsection}
+
+    \begin{rSubsection}{Senior Performance Engineer} {09/2020 - 03/2022}{Akamai
+      Technologies, Cambridge, MA}{}
+
+    \item Led performance escalations for Akamai’s largest enterprise customers
+      by diagnosing inefficiencies across the end-to-end content delivery
+      architecture, correlating end-user experience metrics with server-side
+      telemetry using statistical analysis.
+
+    \item Designed data-driven optimizations and ran A/B experiments to improve
+      content delivery performance for Akamai's top customers, resulting in a
+      10\% increase in delivery throughput.
+
+    \end{rSubsection}
+    %
+
+\end{rSection}
+
+\begin{rSection}{EARLIER EXPERIENCE}
+
+    \begin{rSubsection}{Software Engineer Intern} {}{Chrome
+      Data Saver, Google, Seattle, WA}{}
+
+    \item Improved Chrome Lite Page rendering performance by 50\% by eliminating
+      CSS network requests via HTML inlining, shipping changes to production.
+
+    \end{rSubsection}
+    %
+
+\end{rSection}
+
+\begin{rSection}{AWARDS}
+  Internet Research Task Force, \textbf{Applied Networking Research Prize}, 2018
+\end{rSection}
+
+\begin{rSection}{SKILLS}
+  \emph{Languages:} C++, Python \\
+  \emph{Technologies:} Distributed Systems, Block storage protocols (iSCSI, NVMe), Networking protocols (TCP, TLS, HTTP/2)
+\end{rSection}
+
+\end{document}
